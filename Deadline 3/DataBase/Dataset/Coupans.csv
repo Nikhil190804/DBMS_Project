@@ -1,0 +1,201 @@
+adminID,userID,coupanID,expiry_date,discount_percentage,description,coupan_code
+1,50,1,2017-08-17,15,get the second pair at half price,1
+1,33,2,2020-04-28,37,Buy 2,2
+1,16,3,2009-06-22,61,Receive a complimentary gift card with the purchase of any gift set,3
+1,6,4,2022-03-25,44,Buy one,4
+1,91,5,2016-04-04,46,,5
+1,5,6,2016-03-16,22,Buy 2,6
+1,52,7,2000-09-19,18,get one free on all smoothie flavors,7
+1,16,8,2013-03-23,62,,8
+1,28,9,2012-01-08,11,Buy one,9
+1,100,10,2009-10-27,44,Buy one,10
+1,31,11,2016-10-05,52,Get a free appetizer sampler with the purchase of two entrees,11
+1,88,12,2007-02-22,22,,12
+1,70,13,2016-04-14,60,,13
+1,88,14,2003-04-04,27,Enjoy a free coffee with any breakfast item purchase,14
+1,92,15,2011-05-01,28,Receive a complimentary drink with any dinner special,15
+1,11,16,2009-07-03,18,get 1 free on all organic skincare products,16
+1,12,17,2020-04-02,17,Enjoy a free upgrade to expedited shipping on any order,17
+1,5,18,2007-02-05,24,get 1 free on all protein powder varieties,18
+1,72,19,2023-12-10,64,Take $5 off your next purchase when you sign up for our newsletter,19
+1,74,20,2023-08-15,25,Enjoy a free upgrade to a deluxe room with any hotel booking,20
+1,27,21,2011-05-29,41,,21
+1,96,22,2001-02-09,18,,22
+1,26,23,2012-01-13,12,,23
+1,98,24,2021-09-21,12,Buy 2,24
+1,94,25,2004-08-17,10,Take $5 off your next purchase when you sign up for our newsletter,25
+1,99,26,2019-10-23,29,get one free on all classic board games,26
+1,87,27,2016-01-30,27,Enjoy a free upgrade to a deluxe car wash,27
+1,78,28,2020-01-28,67,Receive a complimentary grooming session with any pet boarding reservation,28
+1,8,29,2013-10-24,40,Receive a complimentary appetizer with the purchase of any bottle of wine,29
+1,91,30,2019-11-05,15,,30
+1,74,31,2000-02-25,70,Buy one,31
+1,78,32,2002-05-18,33,Take $15 off your next purchase of $75 or more,32
+1,27,33,2000-08-29,57,,33
+1,30,34,2016-11-06,31,Enjoy a free upgrade to a premium subscription for 7 days,34
+1,74,35,2006-03-11,67,Get a free accessory with the purchase of any sunglasses,35
+1,61,36,2001-02-15,15,Enjoy a free trial of our premium subscription for 30 days,36
+1,52,37,2018-07-02,11,Take $25 off your first purchase when you join our loyalty program,37
+1,49,38,2000-02-08,53,,38
+1,21,39,2014-01-16,55,,39
+1,84,40,2003-04-06,56,,40
+1,89,41,2020-03-10,30,Receive a complimentary dessert with the purchase of any family meal,41
+1,25,42,2018-02-19,15,,42
+1,66,43,2019-05-16,47,Receive a complimentary dessert with the purchase of any family meal,43
+1,10,44,2013-05-16,55,,44
+1,64,45,2010-01-08,54,Buy one,45
+1,67,46,2020-08-02,61,,46
+1,90,47,2012-07-29,12,Take $15 off any service when you book online,47
+1,33,48,2023-10-27,18,Receive a complimentary grooming session with any pet boarding reservation,48
+1,5,49,2019-09-16,44,,49
+1,32,50,2016-04-14,66,Get a free trial of our streaming service for 1 month,50
+1,24,51,2012-10-22,13,,51
+1,46,52,2015-07-05,68,,52
+1,29,53,2019-11-04,18,,53
+1,16,54,2005-03-28,26,Get a free trial of our software for 30 days,54
+1,74,55,2001-12-07,35,,55
+1,12,56,2009-07-24,21,Buy one,56
+1,13,57,2017-05-07,19,Enjoy a free upgrade to priority boarding with any flight booking,57
+1,86,58,2001-09-08,25,Enjoy a free upgrade to a larger size on any beverage purchase,58
+1,10,59,2005-03-13,29,Receive a complimentary dessert with the purchase of any family meal,59
+1,89,60,2007-11-22,33,Take $25 off your first month of membership,60
+1,93,61,2004-11-27,47,Enjoy a free upgrade to a premium subscription for 7 days,61
+1,75,62,2010-07-08,43,get one free on all smoothie flavors,62
+1,60,63,2003-10-12,56,Take $25 off your first purchase when you join our loyalty program,63
+1,51,64,2014-11-29,70,Buy one,64
+1,29,65,2016-09-01,68,Buy one,65
+1,66,66,2010-03-06,20,Receive a complimentary gift with any purchase over $50,66
+1,73,67,2002-02-21,36,Receive a complimentary appetizer with the purchase of any two entrees,67
+1,15,68,2001-01-02,35,,68
+1,19,69,2002-03-18,57,,69
+1,1,70,2008-12-22,18,Take $25 off your first month of membership,70
+1,59,71,2020-10-31,29,,71
+1,48,72,2009-06-04,11,Receive a complimentary drink with any happy hour special,72
+1,15,73,2023-11-25,54,Enjoy a free trial of our premium subscription for 30 days,73
+1,65,74,2010-10-11,65,Receive a complimentary drink with any dinner special,74
+1,98,75,2013-05-07,13,Receive a complimentary appetizer with the purchase of any bottle of wine,75
+1,55,76,2010-08-08,69,Buy 2,76
+1,40,77,2016-03-31,40,Enjoy a free upgrade to a family-sized meal,77
+1,91,78,2007-05-30,48,Get a free trial of our software for 14 days,78
+1,51,79,2015-11-06,32,,79
+1,53,80,2020-11-30,54,Take $25 off your next purchase of $100 or more,80
+1,13,81,2021-05-28,43,get 1 free on all protein powder varieties,81
+1,7,82,2006-04-04,37,,82
+1,61,83,2000-11-30,48,Enjoy a buy one,83
+1,53,84,2009-07-30,28,Take $20 off your first cleaning service,84
+1,49,85,2003-04-25,35,Save 30% on all summer dresses,85
+1,21,86,2022-02-21,47,,86
+1,94,87,2017-10-22,51,Buy one pair of shoes,87
+1,55,88,2006-12-26,64,get one free on all classic board games,88
+1,3,89,2010-06-23,55,Enjoy a free upgrade to a deluxe car wash,89
+1,53,90,2002-03-13,46,,90
+1,10,91,2003-03-29,53,Get a free appetizer with the purchase of any two dinner entrees,91
+1,32,92,2006-03-28,40,Buy one,92
+1,39,93,2003-03-30,44,Get a free appetizer with the purchase of any bottle of wine,93
+1,9,94,2014-09-06,62,,94
+1,60,95,2005-09-11,13,get 1 free on all houseplant varieties,95
+1,35,96,2017-12-24,14,Buy 2,96
+1,95,97,2014-09-06,36,Buy one pair of shoes,97
+1,37,98,2008-10-14,55,get one free on all breakfast sandwiches,98
+1,41,99,2004-11-05,36,,99
+1,28,100,2018-08-14,22,,100
+1,5,101,2013-03-19,63,,101
+1,96,102,2001-04-22,41,get 1 free on all art supplies,102
+1,43,103,2021-12-20,64,Get a free gift with any purchase over $75,103
+1,63,104,2016-10-14,44,Take $20 off your next purchase when you refer a friend,104
+1,19,105,2015-10-27,37,Enjoy a free upgrade to a deluxe car wash,105
+1,35,106,2000-02-29,50,get 1 free on all organic produce items,106
+1,57,107,2013-06-01,60,Enjoy a free upgrade to express shipping on any order,107
+1,89,108,2018-01-30,49,,108
+1,58,109,2016-07-27,15,,109
+1,88,110,2021-09-12,29,Enjoy a free trial of our premium subscription for 30 days,110
+1,96,111,2000-07-22,51,Receive a complimentary appetizer with the purchase of any two entrees,111
+1,23,112,2023-08-05,53,get 1 free on all protein powder varieties,112
+1,4,113,2018-06-27,25,Take $25 off your next purchase of $100 or more,113
+1,3,114,2008-07-21,48,Receive a free tote bag with any purchase over $50,114
+1,62,115,2010-06-07,58,Buy 2,115
+1,64,116,2002-01-12,41,,116
+1,19,117,2011-10-10,57,,117
+1,80,118,2005-05-28,33,Receive a complimentary drink with any dinner special,118
+1,92,119,2000-03-31,10,Receive a complimentary dessert with the purchase of any dinner entree,119
+1,56,120,2019-07-27,18,Get a free accessory with the purchase of any watch,120
+1,67,121,2009-09-03,14,,121
+1,42,122,2012-07-25,54,,122
+1,83,123,2001-08-05,53,Buy one,123
+1,43,124,2013-12-12,10,Take $20 off your next purchase when you refer a friend,124
+1,25,125,2009-08-03,27,Get a free gift with any purchase over $100,125
+1,97,126,2018-05-17,30,Get a free gift with any purchase over $75,126
+1,77,127,2000-10-17,35,Enjoy a free upgrade to a larger size on any beverage purchase,127
+1,75,128,2002-06-07,22,,128
+1,28,129,2011-08-04,21,Enjoy a free upgrade to a suite with any hotel reservation,129
+1,65,130,2017-03-08,70,Receive a complimentary appetizer with the purchase of any two entrees,130
+1,78,131,2000-11-12,29,Buy 2,131
+1,32,132,2016-06-18,32,Get a free appetizer with the purchase of any two dinner entrees,132
+1,87,133,2011-08-21,55,Receive a complimentary dessert with the purchase of any dinner for two,133
+1,78,134,2014-09-07,14,Get a free trial of our software for 14 days,134
+1,58,135,2012-09-04,52,Receive a free accessory with the purchase of any handbag,135
+1,93,136,2023-08-14,47,Enjoy a free upgrade to express shipping on any order,136
+1,11,137,2009-05-08,41,Buy one,137
+1,54,138,2001-04-04,58,Buy one,138
+1,58,139,2005-07-23,55,Get a complimentary dessert with the purchase of any main course,139
+1,37,140,2013-11-05,15,,140
+1,1,141,2021-11-07,56,,141
+1,96,142,2015-12-04,18,Take $15 off any service on your first visit,142
+1,67,143,2006-04-02,61,Enjoy a free upgrade to a premium subscription for 7 days,143
+1,56,144,2022-10-08,68,Receive a complimentary gift card with the purchase of a gift basket,144
+1,44,145,2010-07-20,17,,145
+1,67,146,2013-09-18,39,Enjoy a free upgrade to a deluxe room with any hotel booking,146
+1,65,147,2009-06-10,45,,147
+1,10,148,2007-01-23,34,,148
+1,45,149,2020-06-08,62,,149
+1,30,150,2009-12-11,63,get 1 free on all books in stock,150
+1,66,151,2000-12-25,68,Get a free 1-month trial of our premium service,151
+1,52,152,2001-04-04,24,Buy 2,152
+1,83,153,2023-03-29,10,get 1 free on all protein bars,153
+1,55,154,2020-03-27,48,get one free on all frozen yogurt flavors,154
+1,42,155,2010-11-13,57,,155
+1,27,156,2023-08-13,69,Enjoy a free upgrade to a full body massage,156
+1,83,157,2014-07-12,53,Receive a complimentary drink with any dinner special,157
+1,45,158,2021-03-14,50,,158
+1,32,159,2018-05-22,40,Receive a complimentary gift card with the purchase of a gift basket,159
+1,93,160,2017-09-25,31,,160
+1,10,161,2010-09-11,42,get 1 free on all jewelry items,161
+1,52,162,2016-08-14,58,Receive a complimentary dessert with the purchase of any family meal,162
+1,78,163,2000-08-18,39,,163
+1,100,164,2017-12-27,10,Enjoy a free upgrade to a suite with any hotel reservation,164
+1,55,165,2019-03-28,52,Take $25 off your first month of membership,165
+1,52,166,2002-04-24,44,Receive a free accessory with the purchase of any handbag,166
+1,97,167,2023-07-16,56,Take $10 off your first meal delivery order,167
+1,75,168,2023-05-06,46,,168
+1,69,169,2009-09-29,11,Get a free appetizer with the purchase of any bottle of wine,169
+1,69,170,2005-02-11,46,Get a free appetizer sampler with the purchase of two entrees,170
+1,2,171,2010-03-24,38,,171
+1,80,172,2008-10-27,45,get 1 free on all cosmetics,172
+1,37,173,2009-06-30,15,Buy 2,173
+1,75,174,2017-04-23,55,,174
+1,100,175,2008-03-05,29,get 1 free on all candles,175
+1,61,176,2011-07-24,20,,176
+1,97,177,2013-02-19,58,Take $10 off any purchase made during your birthday month,177
+1,49,178,2009-03-26,65,Get a free accessory with the purchase of any watch,178
+1,24,179,2007-09-09,15,Enjoy a free appetizer with the purchase of two entrees,179
+1,70,180,2018-12-24,15,,180
+1,5,181,2019-04-24,22,Treat yourself to a free dessert with the purchase of any entree,181
+1,26,182,2002-10-18,16,Enjoy a free upgrade to a premium subscription for 7 days,182
+1,93,183,2007-12-29,63,get one free on all classic board games,183
+1,29,184,2013-11-13,64,Take $25 off your next purchase of $100 or more,184
+1,72,185,2009-09-24,58,Enjoy a free upgrade to a premium account for 30 days,185
+1,99,186,2017-09-09,67,Take $20 off your next purchase when you refer a family member,186
+1,55,187,2006-11-24,20,Get a free trial of our software for 30 days,187
+1,14,188,2017-07-30,52,,188
+1,19,189,2001-05-20,50,Receive a complimentary dessert with the purchase of any dinner entree,189
+1,18,190,2021-08-21,33,,190
+1,1,191,2010-11-19,27,Enjoy a free upgrade to a full body massage,191
+1,13,192,2015-12-19,23,,192
+1,85,193,2006-04-09,34,Enjoy a free upgrade to a deluxe car wash,193
+1,19,194,2001-02-01,64,Enjoy a free trial of our premium subscription for 30 days,194
+1,23,195,2016-10-28,10,Buy 2,195
+1,7,196,2000-03-18,46,get one 50% off on all swimwear,196
+1,12,197,2014-09-03,29,Buy 2,197
+1,87,198,2003-12-11,61,,198
+1,80,199,2018-03-04,42,,199
+1,42,200,2003-04-04,18,,200

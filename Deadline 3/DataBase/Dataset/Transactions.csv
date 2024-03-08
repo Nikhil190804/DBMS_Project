@@ -1,0 +1,201 @@
+transactionID,orderID,userID,date_of_transaction,amount,transaction_status,payment_name
+1,1,1,2012-03-01,1340063,Failed,Credit Card
+2,2,2,2021-12-01,,Failed,Debit Card
+3,3,3,2020-12-16,3372378,,PayPal
+4,4,4,2012-07-13,9223659,Failed,Cash
+5,5,5,2010-02-05,4418177,Success,Bank Transfer
+6,6,6,2021-03-03,3204517,,Cryptocurrency
+7,7,7,2020-02-27,7091225,Failed,Venmo
+8,8,8,2022-05-19,,Success,Apple Pay
+9,9,9,2019-01-27,4402858,Failed,Google Pay
+10,10,10,2019-05-21,1447273,Success,Cash App
+11,11,11,2022-02-16,,Success,Stripe
+12,12,12,2014-09-30,8307310,Failed,Square
+13,13,13,2012-09-07,7398789,Failed,Visa
+14,14,14,2019-06-20,5601122,Failed,MasterCard
+15,15,15,2019-04-15,8924251,Success,American Express
+16,16,16,2010-01-21,3484521,Failed,Discover
+17,17,17,2016-02-21,6765527,Failed,Diners Club
+18,18,18,2019-04-13,,Success,JCB
+19,19,19,2016-04-24,,Failed,Direct Debit
+20,20,20,2019-06-25,,Success,ACH Transfer
+21,21,21,2014-04-10,,Success,Wire Transfer
+22,22,22,2018-05-21,4725665,Failed,Money Order
+23,23,23,2016-09-15,,,Cheque
+24,24,24,2023-07-14,4201013,Failed,Mobile Wallet
+25,25,25,2021-10-02,6007448,Success,Alipay
+26,26,26,2019-05-11,4702837,Success,WeChat Pay
+27,27,27,2011-06-12,,Success,Samsung Pay
+28,28,28,2016-12-04,,Success,Contactless Payment
+29,29,29,2013-01-29,,Success,Amazon Pay
+30,30,30,2016-08-28,,Success,Credit Card
+31,31,31,2017-05-18,,,Debit Card
+32,32,32,2015-10-13,,Success,PayPal
+33,33,33,2021-10-28,172205,Success,Cash
+34,34,34,2020-06-07,5562327,Success,Bank Transfer
+35,35,35,2012-04-22,655123,Failed,Cryptocurrency
+36,36,36,2018-05-22,,Success,Venmo
+37,37,37,2021-09-25,,,Apple Pay
+38,38,38,2015-12-25,,Failed,Google Pay
+39,39,39,2013-11-24,,Failed,Cash App
+40,40,40,2017-09-13,9563972,Success,Stripe
+41,41,41,2012-09-23,1882201,Success,Square
+42,42,42,2020-03-16,,Success,Visa
+43,43,43,2023-06-12,1263653,Success,MasterCard
+44,44,44,2018-05-28,8791692,Success,American Express
+45,45,45,2010-09-23,4070252,Failed,Discover
+46,46,46,2022-11-27,,Success,Diners Club
+47,47,47,2015-04-22,,Failed,JCB
+48,48,48,2017-02-15,3345251,Success,Direct Debit
+49,49,49,2011-01-07,,,ACH Transfer
+50,50,50,2015-06-04,,Failed,Wire Transfer
+51,51,51,2021-03-11,8642198,Success,Money Order
+52,52,52,2011-04-02,,Failed,Cheque
+53,53,53,2023-11-13,721264,Failed,Mobile Wallet
+54,54,54,2023-01-21,,Failed,Alipay
+55,55,55,2014-05-21,7024374,Success,WeChat Pay
+56,56,56,2012-09-21,,Failed,Samsung Pay
+57,57,57,2013-11-10,8496269,Failed,Contactless Payment
+58,58,58,2021-04-09,7180427,,Amazon Pay
+59,59,59,2016-03-01,,Failed,Credit Card
+60,60,60,2021-03-28,3988124,,Debit Card
+61,61,61,2013-08-19,6671610,Success,PayPal
+62,62,62,2017-08-28,,Failed,Cash
+63,63,63,2010-01-14,1682773,Success,Bank Transfer
+64,64,64,2022-04-14,82844,Failed,Cryptocurrency
+65,65,65,2021-08-17,,Failed,Venmo
+66,66,66,2023-12-24,362061,,Apple Pay
+67,67,67,2020-01-31,7697621,Success,Google Pay
+68,68,68,2018-02-10,,Success,Cash App
+69,69,69,2016-03-28,,Failed,Stripe
+70,70,70,2022-11-18,475692,Failed,Square
+71,71,71,2019-06-11,7470060,Failed,Visa
+72,72,72,2021-06-30,7904862,,MasterCard
+73,73,73,2017-04-09,,Failed,American Express
+74,74,74,2011-04-17,,,Discover
+75,75,75,2023-11-20,,Failed,Diners Club
+76,76,76,2016-06-30,511800,,JCB
+77,77,77,2019-03-08,5685964,Success,Direct Debit
+78,78,78,2023-05-22,4066229,Failed,ACH Transfer
+79,79,79,2019-04-07,3682297,Failed,Wire Transfer
+80,80,80,2023-10-01,6318783,Failed,Money Order
+81,81,81,2013-05-30,3582977,Success,Cheque
+82,82,82,2013-02-07,558733,Success,Mobile Wallet
+83,83,83,2011-09-10,1062584,Failed,Alipay
+84,84,84,2016-08-27,,Failed,WeChat Pay
+85,85,85,2010-06-29,,Failed,Samsung Pay
+86,86,86,2010-11-19,3652511,Failed,Contactless Payment
+87,87,87,2015-06-05,3446847,,Amazon Pay
+88,88,88,2016-02-25,154625,,Credit Card
+89,89,89,2023-01-14,4881711,,Debit Card
+90,90,90,2023-02-20,,Failed,PayPal
+91,91,91,2011-05-17,,Failed,Cash
+92,92,92,2012-12-07,1116287,Success,Bank Transfer
+93,93,93,2016-02-15,2381617,Success,Cryptocurrency
+94,94,94,2010-11-19,3690181,,Venmo
+95,95,95,2011-12-01,,Failed,Apple Pay
+96,96,96,2012-01-29,422461,Success,Google Pay
+97,97,97,2014-12-09,,Failed,Cash App
+98,98,98,2014-04-03,5702775,Failed,Stripe
+99,99,99,2023-09-03,,,Square
+100,100,100,2020-06-18,,Success,Visa
+101,1,1,2014-09-28,6498938,Success,MasterCard
+102,2,2,2017-06-13,,Failed,American Express
+103,3,3,2017-10-28,,,Discover
+104,4,4,2022-07-25,1499504,Success,Diners Club
+105,5,5,2017-07-19,,Failed,JCB
+106,6,6,2013-06-05,,Success,Direct Debit
+107,7,7,2018-12-10,,,ACH Transfer
+108,8,8,2020-10-29,,,Wire Transfer
+109,9,9,2013-05-22,9493179,Failed,Money Order
+110,10,10,2014-02-06,5502511,,Cheque
+111,11,11,2010-04-16,,,Mobile Wallet
+112,12,12,2013-02-24,2265345,Failed,Alipay
+113,13,13,2018-12-25,8097639,,WeChat Pay
+114,14,14,2012-05-17,,Success,Samsung Pay
+115,15,15,2012-03-14,,,Contactless Payment
+116,16,16,2017-01-21,6167634,,Amazon Pay
+117,17,17,2017-03-18,4691539,Failed,Credit Card
+118,18,18,2012-06-16,,Success,Debit Card
+119,19,19,2020-11-04,3657821,,PayPal
+120,20,20,2017-01-03,770399,Success,Cash
+121,21,21,2019-10-03,3939195,Failed,Bank Transfer
+122,22,22,2015-03-12,6405322,,Cryptocurrency
+123,23,23,2014-04-19,6130598,Success,Venmo
+124,24,24,2019-07-05,,Success,Apple Pay
+125,25,25,2016-01-01,3236885,,Google Pay
+126,26,26,2012-02-14,8791741,Failed,Cash App
+127,27,27,2014-10-18,7118510,Failed,Stripe
+128,28,28,2012-01-19,6595017,Failed,Square
+129,29,29,2012-03-25,7255164,Failed,Visa
+130,30,30,2017-07-03,7607864,Success,MasterCard
+131,31,31,2012-03-09,,Success,American Express
+132,32,32,2023-11-03,,Failed,Discover
+133,33,33,2016-02-28,8221798,Failed,Diners Club
+134,34,34,2019-08-06,5320076,Success,JCB
+135,35,35,2012-07-02,5779417,Success,Direct Debit
+136,36,36,2020-03-31,8572290,Success,ACH Transfer
+137,37,37,2013-02-27,,Success,Wire Transfer
+138,38,38,2010-03-27,7956236,Failed,Money Order
+139,39,39,2012-05-23,1333502,Failed,Cheque
+140,40,40,2013-04-05,9492440,Failed,Mobile Wallet
+141,41,41,2021-09-08,5428084,Failed,Alipay
+142,42,42,2016-05-07,4134088,Failed,WeChat Pay
+143,43,43,2021-03-06,4547715,Success,Samsung Pay
+144,44,44,2012-11-08,9338947,Success,Contactless Payment
+145,45,45,2015-01-11,8902099,,Amazon Pay
+146,46,46,2021-10-30,,Failed,Credit Card
+147,47,47,2018-10-19,2498387,Failed,Debit Card
+148,48,48,2010-07-10,1085589,Failed,PayPal
+149,49,49,2010-09-20,6470597,Failed,Cash
+150,50,50,2022-11-07,2231694,Failed,Bank Transfer
+151,51,51,2017-06-16,,Success,Cryptocurrency
+152,52,52,2012-01-10,,Failed,Venmo
+153,53,53,2010-04-24,,,Apple Pay
+154,54,54,2018-08-31,,Success,Google Pay
+155,55,55,2013-10-16,5651046,,Cash App
+156,56,56,2020-03-29,,Success,Stripe
+157,57,57,2017-06-16,,Success,Square
+158,58,58,2023-11-12,,,Visa
+159,59,59,2023-03-04,5014471,,MasterCard
+160,60,60,2015-10-20,,Failed,American Express
+161,61,61,2020-11-20,8013399,Success,Discover
+162,62,62,2018-08-07,,,Diners Club
+163,63,63,2013-12-06,42352,Failed,JCB
+164,64,64,2022-02-21,9037658,Success,Direct Debit
+165,65,65,2015-09-13,,,ACH Transfer
+166,66,66,2021-10-12,500097,Success,Wire Transfer
+167,67,67,2014-04-09,9886403,Failed,Money Order
+168,68,68,2016-03-21,3685791,Failed,Cheque
+169,69,69,2022-11-09,6553921,Failed,Mobile Wallet
+170,70,70,2022-03-31,1149581,Success,Alipay
+171,71,71,2023-10-19,,Success,WeChat Pay
+172,72,72,2016-01-16,,,Samsung Pay
+173,73,73,2021-03-31,,Success,Contactless Payment
+174,74,74,2023-04-28,3699630,Success,Amazon Pay
+175,75,75,2012-06-04,4585316,Success,Credit Card
+176,76,76,2022-08-21,2328372,Success,Debit Card
+177,77,77,2018-09-30,1712338,Success,PayPal
+178,78,78,2012-06-21,6612529,Failed,Cash
+179,79,79,2018-06-26,3316583,Success,Bank Transfer
+180,80,80,2013-08-25,704703,Success,Cryptocurrency
+181,81,81,2015-11-05,,,Venmo
+182,82,82,2022-04-11,5484184,,Apple Pay
+183,83,83,2013-12-04,2177247,Success,Google Pay
+184,84,84,2011-03-06,6555470,,Cash App
+185,85,85,2017-10-06,,Failed,Stripe
+186,86,86,2020-12-22,,Failed,Square
+187,87,87,2022-03-27,5243239,Success,Visa
+188,88,88,2022-05-03,7533420,Failed,MasterCard
+189,89,89,2014-06-06,8473122,Success,American Express
+190,90,90,2013-12-26,,Success,Discover
+191,91,91,2022-05-14,,Success,Diners Club
+192,92,92,2021-07-30,,Failed,JCB
+193,93,93,2022-10-15,7272859,Success,Direct Debit
+194,94,94,2016-09-04,,Failed,ACH Transfer
+195,95,95,2020-08-03,2211329,Success,Wire Transfer
+196,96,96,2015-10-30,6154955,Failed,Money Order
+197,97,97,2018-12-17,2433857,Failed,Cheque
+198,98,98,2022-02-06,6314852,Failed,Mobile Wallet
+199,99,99,2014-05-30,4063193,Success,Alipay
+200,100,100,2022-01-09,2465924,Success,WeChat Pay

@@ -1,0 +1,2 @@
+USE NNV;
+INSERT INTO Admin (adminID, email_ID, username, password) VALUES (1, 'NNVadmin@gmail.com', 'Nikhil', 'password@12345' );

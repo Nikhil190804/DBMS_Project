@@ -1,0 +1,200 @@
+CREATE DATABASE IF NOT EXISTS NNV;
+
+USE NNV;
+
+-- ENTITY TABLES
+
+CREATE TABLE IF NOT EXISTS Admin (
+    adminID INT NOT NULL ,
+    email_ID VARCHAR(255) NOT NULL,
+    username VARCHAR(255) UNIQUE NOT NULL,
+ 	password VARCHAR(255) NOT NULL,
+    PRIMARY KEY (adminID),
+    CONSTRAINT CK_Password_Alphanumeric1 CHECK (Password LIKE '%[0-9]%' AND Password LIKE '%[a-zA-Z]%' AND Password LIKE '%[@#!&]%')
+);
+
+
+
+CREATE TABLE IF NOT EXISTS Customer (
+    adminID INT NOT NULL,
+    userID INT NOT NULL AUTO_INCREMENT,
+	password VARCHAR(255) NOT NULL,
+    first_name VARCHAR(255) NOT NULL,
+    middle_name VARCHAR(255),
+    last_name VARCHAR(255),
+	email_ID VARCHAR(255) NOT NULL,
+	phoneID INT UNIQUE NOT NULL,
+    date_of_birth DATE NOT NULL,
+    age INT NOT NULL,
+    house_number INT NOT NULL,
+    street_name VARCHAR(255) NOT NULL,
+    city VARCHAR(255) NOT NULL,
+    pincode INT  NOT NULL,
+    state VARCHAR(255) NOT NULL,
+    CONSTRAINT CK_Password_Alphanumeric2 CHECK (Password LIKE '%[0-9]%' AND Password LIKE '%[a-zA-Z]%'),
+    CHECK (age >= 13),
+    PRIMARY KEY (userID),
+    FOREIGN KEY (adminID) REFERENCES Admin(adminID)
+);
+
+
+
+CREATE TABLE IF NOT EXISTS phone_number (
+ phone_number CHAR(15) NOT NULL,
+ phoneID INT NOT NULL,
+ FOREIGN KEY (phoneID) REFERENCES Customer(phoneID)  
+);
+
+
+
+CREATE TABLE IF NOT EXISTS Coupans  (
+    adminID INT NOT NULL,
+    userID INT NOT NULL,
+    coupanID INT NOT NULL,
+    expiry_date DATE NOT NULL,
+    discount_percentage INT NOT NULL,
+    description TEXT ,
+    coupan_code VARCHAR(50) NOT NULL,
+    CHECK (discount_percentage >= 10 AND discount_percentage <=70),
+    PRIMARY KEY (coupanID),
+    FOREIGN KEY (adminID) REFERENCES Admin(adminID),
+    FOREIGN KEY (userID) REFERENCES Customer(userID)
+);
+
+
+
+
+CREATE TABLE Product (
+  adminID INT NOT NULL,
+  orderID INT NOT NULL,
+  productID INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  description TEXT,
+  price DECIMAL(10,2) NOT NULL,
+  imageID INT NOT NULL,
+  CHECK (price>=0 AND price<=100000)
+  PRIMARY KEY (productID,orderID) ,
+  FOREIGN KEY (adminID) REFERENCES Admin(adminID),
+  FOREIGN KEY (orderID) REFERENCES Order(orderID),
+  FOREIGN KEY (imageID) REFERENCES product_images(imageID)
+);
+
+
+
+CREATE TABLE product_images (
+  imageID INT NOT NULL AUTO_INCREMENT,
+  productID INT NOT NULL,
+  image_url VARCHAR(255) NOT NULL,
+  PRIMARY KEY (imageID),
+  FOREIGN KEY (productID) REFERENCES Product(productID)
+);
+
+
+
+CREATE TABLE IF NOT EXISTS Category(
+    categoryID INT NOT NULL,
+    adminID INT NOT NULL,
+    productID INT NOT NULL,
+    category_name VARCHAR(255) NOT NULL,
+    PRIMARY KEY (categoryID),
+    FOREIGN KEY (adminID) REFERENCES Admin(adminID),
+    FOREIGN KEY (productID) REFERENCES Product(productID)
+);
+
+
+
+CREATE TABLE IF NOT EXISTS Delivery_Agent (
+    adminID INT NOT NULL,
+    orderID INT NOT NULL,
+    uniqueID INT NOT NULL AUTO_INCREMENT,
+    first_name VARCHAR(255) NOT NULL,
+    middle_name VARCHAR(255),
+    last_name VARCHAR(255),
+    phoneID INT UNIQUE NOT NULL,
+    PRIMARY KEY (uniqueID) ,
+    FOREIGN KEY (adminID) REFERENCES Admin(adminID),
+    FOREIGN KEY (orderID) REFERENCES Order(orderID)
+);
+
+
+
+CREATE TABLE IF NOT EXISTS Transactions(
+    transactionID INT NOT NULL UNIQUE,
+    orderID INT NOT NULL,
+    userID INT NOT NULL,
+    date_of_transaction DATE,
+    amount INT NOT NULL,
+    transactions_status VARCHAR(150) NOT NULL,
+    payment_name VARCHAR(255) NOT NULL,
+    CHECK(amount>=0)
+    PRIMARY KEY (transactionID) ,
+    FOREIGN KEY (orderID) REFERENCES Order(orderID),
+    FOREIGN KEY (userID) REFERENCES Customer(userID) 
+);
+
+
+
+
+CREATE TABLE IF NOT EXISTS Reviews (
+	reviewID INT NOT NULL, 
+    userID INT NOT NULL,
+    productID INT NOT NULL,
+    descriptionn TEXT,
+    review_date DATE NOT NULL,
+    review_rating INT NOT NULL ,
+    CHECK (review_rating >= 0 AND review_rating <=10 ),
+    PRIMARY KEY (reviewID),
+    FOREIGN KEY (userID) REFERENCES Customer(userID),
+    FOREIGN KEY (productID) REFERENCES Product(productID)
+);
+
+
+CREATE TABLE IF NOT EXISTS Order (
+	orderID INT NOT NULL, 
+    userID INT NOT NULL,
+    coupanID INT NOT NULL,
+	house_number INT NOT NULL,
+    street_name varchar(255) NOT NULL,
+    city varchar(255) NOT NULL,
+    pincode INT NOT NULL,
+    state varchar(255) NOT NULL,
+    total_amount INT NOT NULL,
+    transactionID INT NOT NULL,
+    CHECK(total_amount>=0)
+    PRIMARY KEY (orderID),
+    FOREIGN KEY (userID) REFERENCES Customer(userID),
+    FOREIGN KEY (coupanID) REFERENCES Coupans(coupanID),
+    FOREIGN KEY (transactionID) REFERENCES Transactions(transactionID)
+);
+
+
+CREATE TABLE IF NOT EXISTS Cart(
+    cartID INT NOT NULL ,
+    userID INT NOT NULL UNIQUE , 
+    productID INT NOT NULL ,
+    total_amount INT ,
+    CHECK(total_amount>=0)
+    PRIMARY KEY (cartID) ,
+    FOREIGN KEY (productID) REFERENCES product(productID) ,
+    FOREIGN KEY (userID) REFERENCES Customer(userID)
+);
+
+
+
+-- INDEX CREATION
+
+
+CREATE INDEX idx_phone_id ON phone_number(phoneID);
+CREATE INDEX idx_product_name ON Product(name);
+CREATE INDEX idx_product_price ON Product(price);
+CREATE INDEX idx_product_review_rating ON Reviews(review_rating);
+CREATE INDEX idx_customers_city ON Customer(city);
+CREATE INDEX idx_customers_age ON Customer(age);
+CREATE INDEX idx_order_amount ON Order(total_amount);
+CREATE INDEX idx_coupan_discount ON Coupans(discount_percentage);
+CREATE INDEX idx_coupan_expiry_date ON Coupans(expiry_date);
+CREATE INDEX idx_cart_amount ON Cart(total_amount);
+CREATE INDEX idx_transaction_status ON Transactions(transactions_status);
+CREATE INDEX idx_transaction_payment_name ON Transactions(payment_name);
+CREATE INDEX idx_order_city ON Order(city);
+CREATE INDEX idx_order_amount ON Order(total_amount);

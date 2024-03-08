@@ -1,0 +1,101 @@
+categoryID,adminID,productID,category_name
+1,1,1,Clothing
+2,1,2,Footwear
+3,1,3,Electronics
+4,1,4,Home Decor
+5,1,5,Kitchen Appliances
+6,1,6,Beauty and Personal Care
+7,1,7,Sports and Outdoors
+8,1,8,Books and Stationery
+9,1,9,Toys and Games
+10,1,10,Health and Wellness
+11,1,11,Furniture
+12,1,12,Jewelry
+13,1,13,Bedding and Linens
+14,1,14,Pet Supplies
+15,1,15,Automotive Accessories
+16,1,16,Home Improvement
+17,1,17,Outdoor Furniture
+18,1,18,Baby Products
+19,1,19,Office Supplies
+20,1,20,Fitness Equipment
+21,1,21,Party Supplies
+22,1,22,Electronics Accessories
+23,1,23,Luggage and Travel Gear
+24,1,24,Watches
+25,1,25,Sunglasses
+26,1,26,Handbags and Wallets
+27,1,27,Craft Supplies
+28,1,28,Art and Craft
+29,1,29,Home Cleaning Supplies
+30,1,30,Musical Instruments
+31,1,31,Gardening Tools
+32,1,32,Bed and Bath
+33,1,33,School Supplies
+34,1,34,Cookware and Bakeware
+35,1,35,Mobile Phones
+36,1,36,Computers and Accessories
+37,1,37,Smart Home Devices
+38,1,38,Fitness Apparel
+39,1,39,Fishing Gear
+40,1,40,Camping Equipment
+41,1,41,Board Games
+42,1,42,Audio and Headphones
+43,1,43,Hobbies and Collectibles
+44,1,44,Video Games
+45,1,45,Sneakers and Athletic Shoes
+46,1,46,Specialty Foods
+47,1,47,Bicycles
+48,1,48,Virtual Reality Gadgets
+49,1,49,Clothing
+50,1,50,Footwear
+1,1,51,Electronics
+2,1,52,Home Decor
+3,1,53,Kitchen Appliances
+4,1,54,Beauty and Personal Care
+5,1,55,Sports and Outdoors
+6,1,56,Books and Stationery
+7,1,57,Toys and Games
+8,1,58,Health and Wellness
+9,1,59,Furniture
+10,1,60,Jewelry
+11,1,61,Bedding and Linens
+12,1,62,Pet Supplies
+13,1,63,Automotive Accessories
+14,1,64,Home Improvement
+15,1,65,Outdoor Furniture
+16,1,66,Baby Products
+17,1,67,Office Supplies
+18,1,68,Fitness Equipment
+19,1,69,Party Supplies
+20,1,70,Electronics Accessories
+21,1,71,Luggage and Travel Gear
+22,1,72,Watches
+23,1,73,Sunglasses
+24,1,74,Handbags and Wallets
+25,1,75,Craft Supplies
+26,1,76,Art and Craft
+27,1,77,Home Cleaning Supplies
+28,1,78,Musical Instruments
+29,1,79,Gardening Tools
+30,1,80,Bed and Bath
+31,1,81,School Supplies
+32,1,82,Cookware and Bakeware
+33,1,83,Mobile Phones
+34,1,84,Computers and Accessories
+35,1,85,Smart Home Devices
+36,1,86,Fitness Apparel
+37,1,87,Fishing Gear
+38,1,88,Camping Equipment
+39,1,89,Board Games
+40,1,90,Audio and Headphones
+41,1,91,Hobbies and Collectibles
+42,1,92,Video Games
+43,1,93,Sneakers and Athletic Shoes
+44,1,94,Specialty Foods
+45,1,95,Bicycles
+46,1,96,Virtual Reality Gadgets
+47,1,97,Clothing
+48,1,98,Footwear
+49,1,99,Electronics
+50,1,100,Home Decor
