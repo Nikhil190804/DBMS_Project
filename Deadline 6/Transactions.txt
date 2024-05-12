@@ -1,0 +1,75 @@
+# Transaction to add items to a cart and decrease the product quantity.
+
+
+START TRANSACTION;
+
+-- Add a product to the cart
+INSERT INTO Cart_has_Products (cartID, productID, product_quantity)
+VALUES (1, 1, 2);
+
+-- Insert a new order with the same items in the cart
+INSERT INTO Orders (orderID, userID, total_amount, order_date)
+VALUES (2, 1, 150, NOW());
+
+-- Insert the items from the cart into the Order_has_Products table
+INSERT INTO Order_has_Products (orderID, productID, product_quantity)
+SELECT 2, productID, product_quantity
+FROM Cart_has_Products
+WHERE cartID = 1;
+
+-- Update the product quantity in the Product table for the items in the order
+UPDATE Product
+SET quantity = quantity - (SELECT SUM(product_quantity) FROM Order_has_Products WHERE orderID = 2)
+WHERE productID IN (SELECT productID FROM Order_has_Products WHERE orderID = 2);
+
+-- Update the cart amount in the Cart table to 0
+UPDATE Cart
+SET total_amount = 0
+WHERE cartID = 1;
+
+COMMIT;
+
+
+
+/*
+Contributions:----
+Nikhil Kumar 2022322: Created Transaction Pair -2 and improved embedded queries.py 
+Vipul 2022576: Created Transaction Pair -1 and created user guide.
+Nitin Kumar: 2022337: Improved Embedded queries.py and basic interface.
+
+*/
+
+
+
+START TRANSACTION;
+
+-- Add a product to the cart
+INSERT INTO Cart_has_Products (cartID, productID, product_quantity)
+VALUES (1, 1, 2);
+
+-- Insert a new order with the same items in the cart
+INSERT INTO Orders (orderID, userID, house_number, street_name, city, pincode, state, total_amount, order_date)
+VALUES
+(1001, 1,453, 'Main Street', 'City1', 123456, 'State1', 150, NOW());
+
+-- Insert the items from the cart into the Order_has_Products table
+INSERT INTO Order_has_Products (orderID, productID, product_quantity)
+SELECT 1001, productID, product_quantity
+FROM Cart_has_Products
+WHERE cartID = 1;
+
+-- Update the product quantity in the Product table for the items in the order
+UPDATE Product
+SET quantity = quantity - (SELECT SUM(product_quantity) FROM Order_has_Products WHERE orderID = 1001)
+WHERE productID IN (SELECT productID FROM Order_has_Products WHERE orderID = 1001);
+
+-- Update the cart amount in the Cart table to 0
+UPDATE Cart
+SET total_amount = 0
+WHERE cartID = 1;
+
+COMMIT;
+/*
+order id=2000
+DELETE FROM cart_has_products where cartID=1;
+*/

@@ -574,3 +574,130 @@ VALUES
 (5, 5),
 (6, 6);
 
+CREATE TABLE log_table (
+    log_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    action VARCHAR(255),
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- TRIGGERS;-----------------------------
+
+-- Trigger for bot activity
+DELIMITER //
+
+CREATE TRIGGER check_order_frequency_and_verify
+AFTER INSERT ON Orders
+FOR EACH ROW
+BEGIN
+    DECLARE order_count INT;
+
+    -- Retrieve the count of orders placed by the user within the last 5 minutes
+    SELECT COUNT(*)
+    INTO order_count
+    FROM Orders
+    WHERE userID = NEW.userID
+    AND orderID != NEW.orderID -- Exclude the current order
+    AND order_date >= DATE_SUB(NOW(), INTERVAL 5 MINUTE);
+
+    -- If the user has placed more than 2 orders within the last 5 minutes
+    IF order_count > 2 THEN
+        -- Log the action
+        INSERT INTO log_table (user_id, action, timestamp)
+        VALUES (NEW.userID, 'Multiple orders placed within a short interval. Possible robot activity detected.', NOW());
+
+        -- You can take further actions here such as alerting an administrator or locking the user's account.
+    END IF;
+END//
+
+DELIMITER ;
+
+
+-- TO VERIFY:
+/*
+
+-- Inserting two entries into the Orders table with timestamps one minute apart
+INSERT INTO Orders (orderID, userID, house_number, street_name, city, pincode, state, total_amount, order_date)
+VALUES
+(81, 1,453, 'Main Street', 'City1', 123456, 'State1', 150, NOW()), -- Current timestamp
+(82, 1, 453, 'Broadway Avenue', 'City2', 654321, 'State2', 200, NOW() - INTERVAL 1 MINUTE),
+(83, 1, 453, 'Broadway Avenue', 'City2', 654321, 'State2', 200, NOW() - INTERVAL 1 MINUTE);
+
+*/
+
+
+
+-- Trigger for transactions and insertions into appropriate table
+
+
+DROP TRIGGER IF EXISTS make_transactions;
+
+DELIMITER $$
+
+CREATE TRIGGER make_transactions AFTER INSERT ON orders
+FOR EACH ROW
+BEGIN
+    DECLARE t_id INT;
+    SELECT MAX(transactionID) + 1 INTO t_id FROM Transactions;
+    IF t_id IS NULL THEN
+        SET t_id = 1; -- If the table is empty, set t_id to 1
+    END IF;
+    INSERT INTO Transactions VALUES (t_id, CURRENT_DATE(), 0, 'Pending','NA');
+    INSERT INTO CustomersTransactions VALUES (NEW.userID,t_id);
+    INSERT INTO transaction_for_order VALUES (NEW.orderID,t_id);
+
+END$$
+
+DELIMITER ;
+
+
+-- Trigger for updating the cart amount and product quantity
+
+ALTER TABLE Product
+ADD COLUMN quantity INT NOT NULL DEFAULT 10;
+
+
+UPDATE Product
+SET quantity = 10; 
+
+
+
+
+DELIMITER //
+
+CREATE TRIGGER update_product_and_cart_after_cart_insert
+AFTER INSERT ON Cart_has_Products
+FOR EACH ROW
+BEGIN
+    DECLARE product_price DECIMAL(10, 2);
+    
+    -- Retrieve the product price from the Product table
+    SELECT price INTO product_price
+    FROM Product
+    WHERE productID = NEW.productID;
+    
+    -- Update the product quantity in the Product table
+    UPDATE Product
+    SET quantity = quantity - NEW.product_quantity
+    WHERE productID = NEW.productID;
+    
+    -- Update the cart amount in the Cart table
+    UPDATE Cart
+    SET total_amount = total_amount + (NEW.product_quantity * product_price)
+    WHERE cartID = NEW.cartID;
+    
+END//
+
+DELIMITER ;
+
+
+
+/*
+INSERT INTO Cart_has_Products (cartID, productID, product_quantity)
+VALUES
+(8, 1, 3);
+
+select * from product;
+
+SELECT * FROM CART;
+*/
